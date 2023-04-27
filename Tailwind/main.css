@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Archivo", sans-serif;
+}
+
+.navbar {
+  @apply flex items-center justify-between w-full fixed top-0 z-10 h-[5.4rem] p-[3.2rem];
+}
+.navbar__img {
+  @apply h-6;
+}
+.navbar__links {
+  @apply p-[3rem] hidden lg:block;
+}
+.navbar_link {
+  @apply text-2xl font-semibold text-[#181b21] mx-[0.4rem] px-[.4rem] py-[.7rem] rounded-[0.8rem] bg-transparent hover:bg-[#181b21] hover:bg-opacity-10 transition-all duration-300;
+}
+
+/* CAR */
+.car {
+  @apply relative w-full h-full;
+}
+.car__img {
+  @apply w-full h-full object-cover;
+}
+.car__headline {
+  @apply absolute top-[20%] left-[50%] text-center;
+}
+
+.transform__50 {
+  transform: translate(-50%, -50%);
+}
+
+.car__title {
+  @apply font-bold text-[4rem]  text-[#393c41] font-semibold;
+}
+.car__link {
+  @apply text-[#4x4d50] text-2xl underline cursor-pointer;
+}
+
+.car__buttons {
+  @apply absolute top-[85%] left-[50%] flex flex-col lg:flex-row;
+}
+.car__button {
+  @apply text-2xl text-white bg-[#171a20] font-medium uppercase my-2 py-[0.4rem] px-[2.4rem] rounded-[0.5rem] w-[25.5rem] h-16 bg-opacity-80;
+}
+.demo__drive {
+  @apply text-[#393c41] bg-white bg-opacity-60 ml-8;
+}
+.go__down {
+  @apply block w-full h-20 mx-auto absolute bottom-[0%] animate-bounce;
+}
