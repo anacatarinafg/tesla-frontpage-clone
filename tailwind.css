@@ -573,7 +573,6 @@ body {
   cursor: pointer;
   font-size: 1.5rem;
   line-height: 2rem;
-  color: #4x4d50;
   text-decoration-line: underline;
 }
 
@@ -582,13 +581,17 @@ body {
   top: 85%;
   left: 50%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+
 }
 
 @media (min-width: 1024px){
 
   .car__buttons{
     flex-direction: row;
+    align-items: center;
   }
 }
 .car__button{
@@ -616,6 +619,15 @@ body {
   --tw-bg-opacity: 0.6;
   --tw-text-opacity: 1;
   color: rgb(57 60 65 / var(--tw-text-opacity));
+}
+@media (max-width: 768px){
+
+  .demo__drive {
+    margin-left: 0;
+  }
+  .navbar__img{
+    height: .5rem;
+  }
 }
 .go__down{
   position: absolute;
